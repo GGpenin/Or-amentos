@@ -1,0 +1,5 @@
+{
+  "name": "Gerador de Orçamentos Pro",
+  "description": "Uma aplicação robusta e intuitiva para gerar orçamentos de produtos. Permite o gerenciamento ilimitado de produtos e quantidades, exibindo os resultados em uma tabela similar ao Excel. Inclui uma calculadora integrada, persistência de dados usando armazenamento local e opções para exportar orçamentos para formatos CSV, PDF e DOC.",
+  "requestFramePermissions": []
+}

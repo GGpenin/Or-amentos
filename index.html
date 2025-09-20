@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="claro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Orçamentos Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jsPDF for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- jsPDF-AutoTable plugin for creating tables in PDFs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/"
+  }
+}
+</script>
+  <style>
+    :root, [data-theme="claro"] {
+      --bg-primary: #f8fafc; /* slate-50 */
+      --bg-secondary: #ffffff; /* white */
+      --bg-tertiary: #f1f5f9; /* slate-100 */
+      --bg-accent: #2563eb; /* blue-600 */
+      --bg-accent-hover: #1d4ed8; /* blue-700 */
+      --bg-accent-subtle: #eff6ff; /* blue-50 */
+      --text-primary: #1e293b; /* slate-800 */
+      --text-secondary: #64748b; /* slate-500 */
+      --text-accent: #2563eb; /* blue-600 */
+      --text-inverted: #ffffff; /* white */
+      --border-primary: #e2e8f0; /* slate-200 */
+      --border-secondary: #cbd5e1; /* slate-300 */
+      --ring-accent: #2563eb; /* blue-600 */
+
+      --bg-danger: #dc2626; /* red-600 */
+      --bg-danger-hover: #b91c1c; /* red-700 */
+      --text-danger: #dc2626; /* red-600 */
+      --bg-danger-subtle: #fee2e2; /* red-100 */
+      --bg-success: #16a34a; /* green-600 */
+      --bg-success-hover: #15803d; /* green-700 */
+      --bg-info: #0891b2; /* cyan-600 */
+      --bg-info-hover: #0e7490; /* cyan-700 */
+      --shadow-color: rgba(0, 0, 0, 0.1);
+    }
+    [data-theme="escuro"] {
+      --bg-primary: #0f172a; /* slate-900 */
+      --bg-secondary: #1e293b; /* slate-800 */
+      --bg-tertiary: #334155; /* slate-700 */
+      --bg-accent: #3b82f6; /* blue-500 */
+      --bg-accent-hover: #2563eb; /* blue-600 */
+      --bg-accent-subtle: #1e293b; /* slate-800 */
+      --text-primary: #f1f5f9; /* slate-100 */
+      --text-secondary: #94a3b8; /* slate-400 */
+      --text-accent: #60a5fa; /* blue-400 */
+      --text-inverted: #ffffff; /* white */
+      --border-primary: #334155; /* slate-700 */
+      --border-secondary: #475569; /* slate-600 */
+      --ring-accent: #3b82f6; /* blue-500 */
+      
+      --bg-danger: #ef4444; /* red-500 */
+      --bg-danger-hover: #dc2626; /* red-600 */
+      --text-danger: #f87171; /* red-400 */
+      --bg-danger-subtle: #3f1212; /* custom dark red */
+      --bg-success: #22c55e; /* green-500 */
+      --bg-success-hover: #16a34a; /* green-600 */
+      --bg-info: #22d3ee; /* cyan-400 */
+      --bg-info-hover: #0891b2; /* cyan-600 */
+      --shadow-color: rgba(0, 0, 0, 0.5);
+    }
+    [data-theme="corporativo"] {
+      --bg-primary: #f0f4f8;
+      --bg-secondary: #ffffff;
+      --bg-tertiary: #e6eaf0;
+      --bg-accent: #0052cc;
+      --bg-accent-hover: #0041a3;
+      --bg-accent-subtle: #e6f0ff;
+      --text-primary: #091e42;
+      --text-secondary: #5e6c84;
+      --text-accent: #0052cc;
+      --text-inverted: #ffffff;
+      --border-primary: #dfe1e6;
+      --border-secondary: #c1c7d0;
+      --ring-accent: #0052cc;
+
+      --bg-danger: #de350b;
+      --bg-danger-hover: #bf2600;
+      --text-danger: #de350b;
+      --bg-danger-subtle: #ffedeb;
+      --bg-success: #00875a;
+      --bg-success-hover: #006644;
+      --bg-info: #007bff;
+      --bg-info-hover: #0056b3;
+      --shadow-color: rgba(9, 30, 66, 0.15);
+    }
+  </style>
+</head>
+  <body class="bg-[var(--bg-primary)]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
